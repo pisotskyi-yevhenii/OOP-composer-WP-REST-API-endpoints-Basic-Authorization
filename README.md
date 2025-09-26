@@ -1,4 +1,4 @@
 # OOP-composer-WP-REST-API-endpoints-Basic-Authorization
 Two custom WP REST API endpoints with basic authentication (OOP aprouch). Autoload classes with composer
-1. Uploads a specified file to specified folder inside folder "uploads" and returns the file URL. 
-2. Sends an email to recipients with a subject, body, and array of URLs.
+- POST /wp-json/stream/v1/uploadAttachment: Uploads a single file to wp-content/uploads/stream-api/year/month/, validates it, and returns the file URL. Requires authentication.
+- POST /wp-json/stream/v1/sendEmail: Sends an HTML email to multiple recipients with a subject, body, and optional attachment URLs (validated). Requires authentication.
