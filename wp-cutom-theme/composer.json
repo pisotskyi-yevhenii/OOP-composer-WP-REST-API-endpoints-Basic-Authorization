@@ -1,0 +1,38 @@
+{
+  "name": "start/base-theme",
+  "description": "Starter theme with predefined general settings",
+  "type": "wordpress-starter-theme",
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "authors": [
+    {
+      "name": "Start",
+      "email": "info@test.com"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packagist.org/"
+    },
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=8.2"
+  },
+  "require-dev": {
+    "symfony/var-dumper": "^5.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Stream\\": "stream-api/"
+    }
+  }
+}
